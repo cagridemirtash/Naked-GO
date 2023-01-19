@@ -16,7 +16,7 @@ import (
 */
 
 var name string = "Çağrı Demirtaş"
-var age, height int64 = 23, 180
+var age, height int64 = 23, 189
 var isBadSide bool = true
 
 func main() {
