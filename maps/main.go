@@ -11,14 +11,14 @@ var nameMap map[string]Name
 
 //The other version of using map
 var nameMapOtherVersion = map[string]Name{
-	"John":  Name{"John", "Doe"},
-	"Çağrı": Name{"Çağrı", "Demirtaş"},
-	"Samet": Name{"Samet", "Aydın"},
-	"Galip": Name{"Galip", "Düğer"},
+	"John":  {"John", "Doe"},
+	"Çağrı": {"Çağrı", "Demirtaş"},
+	"Samet": {"Samet", "Aydın"},
+	"Galip": {"Galip", "Düğer"},
 }
 
 func main() {
-	// Mapping to given a String Key and Name Value
+	// Mapping to given a String Key and Name Values
 	// When reach to a value, give to certain key of requested value
 	fmt.Println("Maps")
 	//Make function returns ready to use map for using with key-value pairs
