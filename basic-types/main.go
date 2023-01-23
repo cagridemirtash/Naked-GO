@@ -29,7 +29,7 @@ var first, second, third int
 func main() {
 	fmt.Println("Your Name :", name)
 	fmt.Println("Your Age :", age, "Your Height :", height)
-	// The initialize values which are cagri => "", first, second, third are 0
+	// To initialize values which are cagri => "", first, second, third are 0
 	// Assign to default value from GO.
 	fmt.Println(cagri, first, second, third)
 	// !If Condition -> We can use with assign a variable and use it

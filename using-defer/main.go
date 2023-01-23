@@ -15,13 +15,13 @@ func main() {
 	}
 	fmt.Println("done")
 
-	// When the change the value of variable, it cannot change because defer process push to memory
+	// When Change the value of variable, it cannot change because defer process push to memory
 	var a int = 5
 	fmt.Println("The first value of a", a)
 	defer fmt.Println("The last value of a", a)
 	a = 7
 
-	//Same sutiation in the pointer, cannot change.
+	//Same situation in the pointer, cannot change.
 	var b int = 5
 	d := &b
 	//If d pointer change this line, b had a value like 7. The structure is very important.
