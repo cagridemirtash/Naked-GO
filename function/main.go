@@ -3,25 +3,25 @@ package main
 import "fmt"
 
 func main() {
-	person := Cagri{"Çağrı", "Demirtaş"}
+	person := Person{"Çağrı", "Demirtaş"}
 	firstNumber := Number{person.FirstName, 5}
 	handlePersonWithNumber(person, firstNumber)
 	// Call Receiver function
 	person.handlePersonWithReceiver()
 }
 
-func handlePersonWithNumber(cagri Cagri, tempNumber Number) {
-	if cagri.FirstName == tempNumber.key {
+func handlePersonWithNumber(person Person, tempNumber Number) {
+	if person.FirstName == tempNumber.key {
 		fmt.Println("This is a relation between Number and Cagri struct.")
 	}
 }
 
 // This function call Receiver Function
-func (cagri Cagri) handlePersonWithReceiver() {
-	fmt.Println("Welcome", cagri.FirstName)
+func (person Person) handlePersonWithReceiver() {
+	fmt.Println("Welcome", person.FirstName)
 }
 
-type Cagri struct {
+type Person struct {
 	FirstName  string
 	SecondName string
 }
