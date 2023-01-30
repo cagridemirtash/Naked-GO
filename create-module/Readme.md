@@ -16,3 +16,10 @@
     //If the main file and modules same directory
     go mod edit -replace [package-name]/[module-name]=../[module-name]
 ```
+```
+    //Edit directory for using main module
+    //Run this comment When the modules which use this package 
+    go mod edit -replace example.com/greetings=../greetings
+    //Creates version of package
+    go mod tidy
+```
