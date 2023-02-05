@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	// Design Calculator which is take input from user
 	fmt.Println("Please enter your First Name")
 	var firstName string
 	_, err := fmt.Scanln(&firstName)
