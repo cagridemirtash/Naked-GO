@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	//Scanln which is hold the value of strings
 	fmt.Println("Please enter your First Name")
 	var firstName string
 	_, err := fmt.Scanln(&firstName)
