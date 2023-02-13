@@ -16,5 +16,7 @@ func main() {
 	//conditions.WorkshopCondition()
 
 	//loops.ForLoopDemo()
-	loops.GuessingGame()
+	//loops.GuessingGame()
+	//loops.IsPrime()
+	loops.FriendsNumber()
 }
