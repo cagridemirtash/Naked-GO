@@ -1,6 +1,6 @@
 package main
 
-import "supercharger/loops"
+import "supercharger/arrays"
 
 func main() {
 	//theNameOfUser := variables.Demo1()
@@ -18,5 +18,7 @@ func main() {
 	//loops.ForLoopDemo()
 	//loops.GuessingGame()
 	//loops.IsPrime()
-	loops.FriendsNumber()
+	//loops.FriendsNumber()
+	//arrays.ArraysExample()
+	arrays.MultidimensionalArrays()
 }
