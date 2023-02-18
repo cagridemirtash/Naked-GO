@@ -1,6 +1,9 @@
 package main
 
-import "supercharger/slices"
+import (
+	"fmt"
+	"supercharger/functions"
+)
 
 func main() {
 	//theNameOfUser := variables.Demo1()
@@ -22,5 +25,16 @@ func main() {
 	//arrays.ArraysExample()
 	//arrays.MultidimensionalArrays()
 	//slices.SlicesIntro()
-	slices.SlicesCopy()
+	//slices.SlicesCopy()
+
+	//Functions Intro Start
+	//var sumAdd int = functions.Add(6, 7)
+	//fmt.Println(sumAdd)
+	//functions.SayHi("Çağrı")
+	//Functions Intro End
+	sum, subtraction, multiple, division := functions.StoryProblem(10, 6)
+	fmt.Println("Sum of Two Number :", sum)
+	fmt.Println("Subtraction of Two Number :", subtraction)
+	fmt.Println("Multiple of Two Number :", multiple)
+	fmt.Println("Division of Two Number :", division)
 }
