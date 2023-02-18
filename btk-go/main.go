@@ -1,6 +1,6 @@
 package main
 
-import "supercharger/arrays"
+import "supercharger/slices"
 
 func main() {
 	//theNameOfUser := variables.Demo1()
@@ -20,5 +20,6 @@ func main() {
 	//loops.IsPrime()
 	//loops.FriendsNumber()
 	//arrays.ArraysExample()
-	arrays.MultidimensionalArrays()
+	//arrays.MultidimensionalArrays()
+	slices.SlicesIntro()
 }
