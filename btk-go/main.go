@@ -21,5 +21,6 @@ func main() {
 	//loops.FriendsNumber()
 	//arrays.ArraysExample()
 	//arrays.MultidimensionalArrays()
-	slices.SlicesIntro()
+	//slices.SlicesIntro()
+	slices.SlicesCopy()
 }
