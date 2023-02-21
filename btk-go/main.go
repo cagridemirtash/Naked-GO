@@ -1,5 +1,7 @@
 package main
 
+import "supercharger/maps"
+
 func main() {
 	//theNameOfUser := variables.Demo1()
 	//variables.Demo2(theNameOfUser)
@@ -41,4 +43,5 @@ func main() {
 	/*sum := functions.VariadicFunction(3, 5, 7, 9, 16)
 	fmt.Println(sum)*/
 	/*Variadic Function End*/
+	maps.Intro()
 }
