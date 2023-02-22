@@ -1,7 +1,5 @@
 package main
 
-import "supercharger/maps"
-
 func main() {
 	//theNameOfUser := variables.Demo1()
 	//variables.Demo2(theNameOfUser)
@@ -43,5 +41,14 @@ func main() {
 	/*sum := functions.VariadicFunction(3, 5, 7, 9, 16)
 	fmt.Println(sum)*/
 	/*Variadic Function End*/
-	maps.Intro()
+	//maps.Intro()
+	/* Example of range use case
+	numbersArr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	sum := 0
+	for _, v := range numbersArr {
+		if v%2 != 0 {
+			sum += v
+		}
+	}
+	fmt.Println(sum)*/
 }

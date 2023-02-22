@@ -25,7 +25,8 @@ func Intro() {
 }
 
 func PrintMap(translator map[string]string) {
-	for i, v := range translator {
-		fmt.Printf("English : %s -> German: %s \n", i, v)
+	//Key, Value
+	for k, v := range translator {
+		fmt.Printf("English : %s -> German: %s \n", k, v)
 	}
 }
