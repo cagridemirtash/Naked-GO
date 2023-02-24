@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"supercharger/pointers"
+)
+
 func main() {
 	//theNameOfUser := variables.Demo1()
 	//variables.Demo2(theNameOfUser)
@@ -51,4 +56,9 @@ func main() {
 		}
 	}
 	fmt.Println(sum)*/
+	/*Pointer Examples Start*/
+	number := 20
+	pointers.PointerIntro(&number)
+	fmt.Println("Main Numbers :", number)
+	/*Pointer Examples End*/
 }
