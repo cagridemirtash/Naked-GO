@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"supercharger/pointers"
+	"supercharger/structs"
 )
 
 func main() {
@@ -57,14 +57,21 @@ func main() {
 	}
 	fmt.Println(sum)*/
 	/*Pointer Examples Start*/
-	number := 20
-	pointers.PointerIntro(&number)
-	fmt.Println("Main Numbers :", number)
+	//number := 20
+	//pointers.PointerIntro(&number)
+	//fmt.Println("Main Numbers :", number)
 
 	//Array Examples
 	//Array act like pass by reference which is use address when execute or change on elements.
-	numbers := []int{1, 2, 3, 4, 5}
-	pointers.PointerWithArray(numbers)
-	fmt.Println("Main numbers element :", numbers[0])
+	//numbers := []int{1, 2, 3, 4, 5}
+	//pointers.PointerWithArray(numbers)
+	//fmt.Println("Main numbers element :", numbers[0])
 	/*Pointer Examples End*/
+
+	/*Struct Examples Start*/
+	user := structs.StructsIntro()
+	fmt.Println("User :", user)
+	structs.StructUseCase()
+	/*Struct Examples End*/
+
 }
