@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"supercharger/structs"
+	"supercharger/goroutines"
+	"time"
 )
 
 func main() {
@@ -40,7 +40,6 @@ func main() {
 	fmt.Println("Multiple of Two Number :", multiple)
 	fmt.Println("Division of Two Number :", division)*/
 	/*Multiple Return Function End*/
-
 	/*Variadic Function Start*/
 	//Use Cases: Cross cutting concerns -> Logging, Caching Mechanism, Authentication dependencies
 	/*sum := functions.VariadicFunction(3, 5, 7, 9, 16)
@@ -69,9 +68,11 @@ func main() {
 	/*Pointer Examples End*/
 
 	/*Struct Examples Start*/
-	user := structs.StructsIntro()
+	/*user := structs.StructsIntro()
 	fmt.Println("User :", user)
-	structs.StructUseCase()
+	structs.StructUseCase()*/
 	/*Struct Examples End*/
-
+	go goroutines.EvenNumbers()
+	go goroutines.OddNumbers()
+	time.Sleep(5 * time.Second)
 }
