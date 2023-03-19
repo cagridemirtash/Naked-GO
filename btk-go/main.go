@@ -1,8 +1,8 @@
 package main
 
 import (
-	"supercharger/goroutines"
-	"time"
+	"fmt"
+	"supercharger/channels"
 )
 
 func main() {
@@ -72,7 +72,24 @@ func main() {
 	fmt.Println("User :", user)
 	structs.StructUseCase()*/
 	/*Struct Examples End*/
-	go goroutines.EvenNumbers()
-	go goroutines.OddNumbers()
-	time.Sleep(5 * time.Second)
+
+	/*Goroutines Example Start*/
+	/*
+		go goroutines.EvenNumbers()
+		go goroutines.OddNumbers()
+		time.Sleep(5 * time.Second)
+	*/
+	/*Goroutines Example End*/
+
+	/*Channels Example Start*/
+	evenCn := make(chan int)
+	oddCn := make(chan int)
+	go channels.OddNumbers(oddCn)
+	go channels.EvenNumbers(evenCn)
+
+	evenSum, oddSum := <-evenCn, <-oddCn
+
+	sum := evenSum * oddSum
+	fmt.Println(sum)
+	/*Channels Example End*/
 }
